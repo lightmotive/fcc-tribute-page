@@ -1,11 +1,49 @@
+body {
+    font-family: Robotto, sans-serif;
+}
+
 .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vmin;
+    border-radius: 10px;
+    background-color: hsl(36, 83%, 97%);
+    font-size: 20px;
+}
+
+.title {
+    font-size: 40px;
+    margin: 15px;
+}
+
+.title-image-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.title-image {
+    max-height: 500px;
+    max-width: 70vmin;
+}
+
+figcaption {
+    font-size: 18px;
     text-align: center;
 }
 
-.image-responsive {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.information {
+    color: black;
+    text-align: left;
+    margin-left: 10vmin;
+    margin-right: 10vmin;
+    max-width: 50vmin;
+    padding-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    padding-left: 10px;
+    border-left: thick solid grey;
 }

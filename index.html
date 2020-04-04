@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jóhann Jóhannsson</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style-common.css" />
     <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
 <body>
     <main id="main" class="main-content">
-        <h1 id="title">Jóhann Jóhannsson</h1>
-        <div>Icelandic composer, <time datetime="1969">1969</time> - <time datetime="2018">2018</time></div>
+        <h1 id="title" class="title">Jóhann Jóhannsson</h1>
+        <p>The composer who blended traditional orchestration with modern electronics</p>
 
-        <figure id="img-div">
-            <img id="image" class="image-responsive"
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d2/J%C3%B3hann_J%C3%B3hannsson_by_Sachyn_Mital.jpg"
-                alt="Jóhann Jóhannsson in a casual jacket" />
+        <figure id="img-div" class="title-image-container">
+            <img id="image" class="title-image image-responsive"
+                src="https://d1t3zg51rvnesz.cloudfront.net/p/images/cms2/566/p1400971_by_timothee_lambrecq.jpg"
+                alt="Jóhann in his studio with computer equipment, analog audio equipment, and an unfinished log wall" />
             <br>
-            <figcaption id="img-caption">Jóhann Jóhannsson by Sachyn Mital, <time
-                    datetime="2013-10-7">7-October-2013</time></figcaption>
+            <figcaption id="img-caption">Jóhann in his studio that captures unique musical sensibilities</figcaption>
         </figure>
-        <div id="tribute-info">
-            <p>A favorite composer of mine for years, Jóhann blended traditional acoustic orchestration with modern
-                electronics seamlessly.</p>
-            <a id="tribute-link" href="https://en.wikipedia.org/wiki/J%C3%B3hann_J%C3%B3hannsson" target="_blank">Learn
-                more about Jóhann's life and contributions.</a>
+
+        <div id="tribute-info" class="information">
+            <p>Pitchfork Media wrote of his first album, <em>Englabörn</em> (released in <time datetime="2002">2002</time>):</p>
+            <blockquote>"[it's] exceptionally restrained, the piano moving like droplets off of slowly melting
+                icicles, the violin breathing warmth from above. The hesitation of each breath and falling bead feels as
+                though it were a Morton Feldman piece condensed to three minutes."</blockquote>
+            Learn more about Jóhann's life and contributions to the arts and entertainment world on his <a id="tribute-link"
+                href="https://en.wikipedia.org/wiki/J%C3%B3hann_J%C3%B3hannsson" target="_blank">Wikipedia entry</a>.
         </div>
     </main>
 </body>
