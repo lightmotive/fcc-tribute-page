@@ -5,32 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jóhann Jóhannsson</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="style-common.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
 <body>
     <main id="main" class="main-content">
         <h1 id="title" class="title">Jóhann Jóhannsson</h1>
-        <div class="subtitle">"People seem to need labels, but they can be needlessly reductive"</div>
+        <div>"People seem to need labels, but they can be <span
+                style="font-weight: lighter; vertical-align: sub;">needlessly <sub>reductive</sub></span>"</div>
 
         <figure id="img-div" class="title-image-container">
             <img id="image" class="title-image image-responsive"
                 src="https://d1t3zg51rvnesz.cloudfront.net/p/images/cms2/566/p1400971_by_timothee_lambrecq.jpg"
-                alt="Jóhann in his studio with computer equipment, analog audio equipment, and an unfinished log wall" />
-            <figcaption id="img-caption">Jóhann in his studio</figcaption>
+                alt="Jóhann in a practice space with computer equipment, analog audio equipment, and an unfinished log wall" />
+            <figcaption id="img-caption">Jóhann in a Norwegian practice space that Sigur Rós usually uses</figcaption>
         </figure>
 
-        <div id="tribute-info" class="information">
-            <!-- <div></div> -->
-            <p>Pitchfork Media wrote of his first album, <em>Englabörn</em> (released in <time datetime="2002">2002</time>):</p>
+        <h2>His music in one word: <strong style="font-weight: bolder; vertical-align: super;">profound</strong></h2>
+
+        <figure id="tribute-info">
+            <div class="iframe-responsive-dimensions-controller--16x9">
+                <div class="iframe-responsive iframe-responsive--16x9">
+                    <iframe src="https://www.youtube.com/embed/YvhhTclmXHQ" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <figcaption>Retrospective I, Deutsche Grammophon</figcaption>
+        </figure>
+
+        <h2>A brief history of Jóhann's life and key works</h2>
+        <!-- A front-end framework like React linked to a history database would be useful here! Future projects... :-) -->
+        <div class="history-container">
+            <div class="history-container-row">
+                <div class="history-label"><time datetime="1969-07-09">19-Sep-1969</time></div>
+                <div class="history-events">
+                    <div>Born in Reykjavík, Iceland to Jóhann Gunnarsson, a maintenance engineer who worked for IBM, and
+                        Edda Thorkelsdóttir.</div>
+                </div>
+            </div>
+            <div class="history-container-row">
+                <div class="history-label"><time datetime="1980">1980s</time></div>
+                <div class="history-events">
+                    <div>Work 1</div>
+                    <div>Work 2</div>
+                    <div>Work 3</div>
+                    <div>Work 4</div>
+                    <div>Work 5</div>
+                    <div>Work 6</div>
+                </div>
+            </div>
+            <div class="history-container-row">
+                <div class="history-label"><time datetime="1990">1990s</time></div>
+                <div class="history-events">
+                    <div>Work 1</div>
+                    <div>Work 2</div>
+                    <div>Work 3</div>
+                </div>
+            </div>
+            <div class="history-container-row">
+                <div class="history-label"><time datetime="2018-02-09">09-Feb-2018</time></div>
+                <div class="history-events">
+                    <div>Died suddenly in Berlin due to drug overdose.</div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="information">
+            <p>Pitchfork Media wrote of his first album, <em>Englabörn</em> (released in <time
+                    datetime="2002">2002</time>):</p>
             <blockquote>"[it's] exceptionally restrained, the piano moving like droplets off of slowly melting
                 icicles, the violin breathing warmth from above. The hesitation of each breath and falling bead feels as
                 though it were a Morton Feldman piece condensed to three minutes."</blockquote>
-            Learn more about Jóhann's life and contributions to the arts and entertainment world on his <a id="tribute-link"
-                href="https://en.wikipedia.org/wiki/J%C3%B3hann_J%C3%B3hannsson" target="_blank">Wikipedia entry</a>.
-        </div>
+        </div> -->
+
+        <p>Learn more in his <a id="tribute-link" href="https://en.wikipedia.org/wiki/J%C3%B3hann_J%C3%B3hannsson"
+                target="_blank">Wikipedia entry</a>.</p>
     </main>
 </body>
 
