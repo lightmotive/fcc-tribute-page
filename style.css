@@ -1,16 +1,39 @@
+:root {
+    --content-relative-width: 90vw;
+    --content-max-width: 700px;
+    --main-background-color: hsl(36, 83%, 97%);
+    --main-text-color: hsl(360, 100%, 10%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: Robotto, sans-serif;
+    color: var(--main-text-color);
+    font-size: 20px;
+    text-align: center;
 }
 
 .main-content {
+    background-color: var(--main-background-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1vmin;
     border-radius: 10px;
-    background-color: hsl(36, 83%, 97%);
-    font-size: 20px;
+    padding: 1vmin;
+}
+
+.main-content > * {
+    width: var(--content-relative-width);
+    max-width: var(--content-max-width);
 }
 
 .title {
@@ -18,33 +41,56 @@ body {
     margin: 15px;
 }
 
-.subtitle {
-    text-align: center;
-}
-
 .title-image-container {
     background-color: white;
     padding: 10px;
+    border: 5px outset lightgrey; 
 }
 
 .title-image {
-    max-height: 500px;
-    max-width: 95vmin;
+    max-width: var(--content-max-width);
 }
 
 figcaption {
     margin-top: 10px;
-    font-size: 18px;
-    text-align: center;
+    font-size: 16px;
 }
 
 .information {
-    color: black;
     text-align: left;
-    margin-left: 2.5vmin;
-    margin-right: 2.5vmin;
-    max-width: 65vmin;
     padding-bottom: 20px;
+}
+
+.iframe-responsive {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    /* The following centers content within this relatively positioned element */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iframe-responsive iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.iframe-responsive--16x9 {
+    /* SASS/SCSS mixin could be useful here. */
+    /* Calculate the video size ratio. For 16:9, the percentage is 9/16 = 56.25% */
+    padding-top: 56.25%;
+}
+
+.iframe-responsive-dimensions-controller--16x9 {
+    position: relative;
+    max-width: var(--content-max-width);
+    max-height: calc(var(--content-max-width * .5625));
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 blockquote {
@@ -53,8 +99,13 @@ blockquote {
     border-left: thick solid grey;
 }
 
-@media (max-width: 500px) {
-    .information {
-        max-width: 95vmin;
-    }
+.artistic-works-overview {
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    /* .main-content .flex-item {
+        padding-left: 2%;
+        padding-right: 2%;
+    } */
 }
