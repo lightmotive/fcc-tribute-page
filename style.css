@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2vmin;
+    margin: 1vmin;
     border-radius: 10px;
     background-color: hsl(36, 83%, 97%);
     font-size: 20px;
@@ -18,17 +18,22 @@ body {
     margin: 15px;
 }
 
+.subtitle {
+    text-align: center;
+}
+
 .title-image-container {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
 }
 
 .title-image {
     max-height: 500px;
-    max-width: 70vmin;
+    max-width: 95vmin;
 }
 
 figcaption {
+    margin-top: 10px;
     font-size: 18px;
     text-align: center;
 }
@@ -36,14 +41,20 @@ figcaption {
 .information {
     color: black;
     text-align: left;
-    margin-left: 10vmin;
-    margin-right: 10vmin;
-    max-width: 50vmin;
+    margin-left: 2.5vmin;
+    margin-right: 2.5vmin;
+    max-width: 65vmin;
     padding-bottom: 20px;
 }
 
 blockquote {
     font-style: italic;
-    padding-left: 10px;
+    padding-left: 5px;
     border-left: thick solid grey;
+}
+
+@media (max-width: 500px) {
+    .information {
+        max-width: 95vmin;
+    }
 }
