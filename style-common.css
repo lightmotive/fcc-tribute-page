@@ -5,3 +5,27 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.iframe-responsive {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    /* The following centers content within this relatively positioned element */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iframe-responsive iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.iframe-responsive--16x9 {
+    /* SASS/SCSS mixin could be useful here. */
+    /* Calculate the video size ratio. For 16:9, the percentage is 9/16 = 56.25% */
+    padding-top: 56.25%;
+}
