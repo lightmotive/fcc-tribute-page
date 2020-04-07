@@ -145,9 +145,10 @@ blockquote {
 .history-events {
     grid-area: "history-events";
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(175px, .5fr));
     gap: 5px 5px;
     text-align: left;
+    border-radius: 5px;
 }
 
 .history-events>div {
