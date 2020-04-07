@@ -1,0 +1,23 @@
+{
+  "name": "fcc-tribute-page",
+  "version": "1.1.0",
+  "description": "See readme",
+  "main": "index.js",
+  "dependencies": {
+    "readmore-js": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alight1/fcc-tribute-page.git"
+  },
+  "author": "Andre Light",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alight1/fcc-tribute-page/issues"
+  },
+  "homepage": "https://github.com/alight1/fcc-tribute-page#readme"
+}
