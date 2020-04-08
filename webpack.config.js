@@ -6,13 +6,15 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: "assets"
     },
     devServer: {
         contentBase: './dist',
     },
+    devtool: 'inline-source-map',
     plugins: [
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: "Jóhann Jóhannsson Tribute",
             template: './src/index.html'
@@ -30,23 +32,24 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: ['style-loader', {
-                    loader: 'css-loader'
-                }]
+                use: ['style-loader', 'css-loader']
             },
             {
-                test: /\.(jpg|JPG|jpeg|png|gif|mp3|ttf|woff2|woff|eot)$/gi,
-                use: [
-                    {
-                        loader: 'file-loader'
-                    }
-                ]
+                test: /\.(jpe?g|png|gif)$/,
+                loader: 'url-loader',
+                options: {
+                    // Images larger than 10 KB won’t be inlined
+                    limit: 10 * 1024,
+                    publicPath: 'assets'
+                }
             },
             {
                 test: /\.svg$/i,
                 use: {
                     loader: 'svg-url-loader',
-                    options: {}
+                    options: {
+                        publicPath: 'assets'
+                    }
                 }
             }
         ],
