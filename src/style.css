@@ -203,24 +203,15 @@ blockquote {
     width: 24px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .history-container-row {
         grid-template-columns: 1fr;
         grid-template-areas: "history-label" "history-events";
+    }
+    .history-events {
+        display: block;
     }
     .history-label {
         text-align: left;
     }
 }
-
-@media(max-width: 400px) {
-    .history-events {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* @media(min-width: 600px) {
-    .event-description {
-        max-height: 300px;
-    }
-} */
