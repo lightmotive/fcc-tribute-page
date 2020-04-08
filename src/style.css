@@ -176,20 +176,20 @@ blockquote {
 }
 
 .history-event-icon--album {
-    background: url(https://alight-web-profile.s3-us-west-2.amazonaws.com/fcc-tribute-page/album-icon.svg) no-repeat top left;
+    background: url('assets/record-icon.png') no-repeat top left;
 }
 
 .history-event-icon--film-soundtrack {
-    background: url(https://alight-web-profile.s3-us-west-2.amazonaws.com/fcc-tribute-page/film-soundtrack-icon.svg) no-repeat top left;
+    background: url('assets/film-soundtrack-icon.png') no-repeat top left;
 }
 
-.history-event-icon--live {
-    background: url(https://alight-web-profile.s3-us-west-2.amazonaws.com/fcc-tribute-page/live-performance-icon.svg) no-repeat top left;
-}
+/* .history-event-icon--live {
+    background: url('assets/grand-piano-icon.png') no-repeat top left;
+} */
 
-.history-event-icon--film {
-    background: url(https://alight-web-profile.s3-us-west-2.amazonaws.com/fcc-tribute-page/film-icon.svg) no-repeat top left;
-}
+/* .history-event-icon--film-director {
+    background: url('assets/director-chair-icon.png') no-repeat top left;
+} */
 
 .work-title {
     font-weight: bold;

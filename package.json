@@ -2,13 +2,29 @@
   "name": "fcc-tribute-page",
   "version": "1.1.0",
   "description": "See readme",
-  "main": "index.js",
+  "private": true,
   "dependencies": {
     "readmore-js": "^2.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.1",
+    "extract-loader": "^5.0.1",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.0.4",
+    "style-loader": "^1.1.3",
+    "svg-url-loader": "^5.0.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode=development",
+    "start": "webpack-dev-server --open --mode=development",
+    "build": "webpack --mode=production",
+    "publish": "echo \"Error: no publish specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,5 +35,6 @@
   "bugs": {
     "url": "https://github.com/alight1/fcc-tribute-page/issues"
   },
-  "homepage": "https://github.com/alight1/fcc-tribute-page#readme"
+  "homepage": "https://github.com/alight1/fcc-tribute-page#readme",
+  "keywords": []
 }
