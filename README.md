@@ -1,4 +1,6 @@
 # fcc-tribute-page
+**[View demo online](http://alight-web-profile.s3-website-us-west-2.amazonaws.com/fcc-tribute-page/)**
+
 freeCodeCamp project: [Build a Tribute Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
 
 A responsive web page created with the following concepts:
