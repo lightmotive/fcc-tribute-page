@@ -121,13 +121,13 @@ blockquote {
 .history-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .history-container-row {
     display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 125px 1fr;
+    grid-gap: 10px;
     grid-template-areas: "history-label history-events";
 }
 
@@ -145,7 +145,7 @@ blockquote {
 .history-events {
     grid-area: "history-events";
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(175px, .5fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, .5fr));
     gap: 5px 5px;
     text-align: left;
     border-radius: 5px;
@@ -156,39 +156,21 @@ blockquote {
     color: var(--history-event-text-color);
     padding: 5px;
     box-shadow: 2px 2px 1px var(--main-text-color);
-    display: flex;
-    flex-direction: column;
 }
 
-.history-event-header {
+.event-header {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-.history-event-header time {
+.event-header time {
     font-weight: bolder;
 }
 
-.history-event-icon {
+.event-icon {
     width: 32px;
     height: 32px;
-    background-size: contain;
-}
-
-.history-event-icon--album {
-    background: url(https://alight-web-profile.s3-us-west-2.amazonaws.com/fcc-tribute-page/album-icon.svg) no-repeat top left;
-}
-
-.history-event-icon--film-soundtrack {
-    background: url(https://alight-web-profile.s3-us-west-2.amazonaws.com/fcc-tribute-page/film-soundtrack-icon.svg) no-repeat top left;
-}
-
-.history-event-icon--live {
-    background: url(https://alight-web-profile.s3-us-west-2.amazonaws.com/fcc-tribute-page/live-performance-icon.svg) no-repeat top left;
-}
-
-.history-event-icon--film {
-    background: url(https://alight-web-profile.s3-us-west-2.amazonaws.com/fcc-tribute-page/film-icon.svg) no-repeat top left;
 }
 
 .work-title {
@@ -211,10 +193,23 @@ blockquote {
     padding-bottom: 5px;
 }
 
+.event-description {
+    max-height: 200px;
+    overflow-y: hidden;
+}
+
+.read-more-open, .read-more-close {
+    height: 24px;
+    width: 24px;
+}
+
 @media (max-width: 600px) {
     .history-container-row {
         grid-template-columns: 1fr;
         grid-template-areas: "history-label" "history-events";
+    }
+    .history-events {
+        display: block;
     }
     .history-label {
         text-align: left;
