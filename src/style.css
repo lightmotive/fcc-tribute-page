@@ -47,6 +47,7 @@ http://paletton.com
     --highlight-text-color: white;
     --history-event-background-color: #D8CFBF;
     --history-event-text-color: black;
+    --event-card-min-width: 200px;
 }
 
 html {
@@ -145,7 +146,7 @@ blockquote {
 .history-events {
     grid-area: "history-events";
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, .5fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--event-card-min-width), .5fr));
     gap: 5px 5px;
     text-align: left;
     border-radius: 5px;
@@ -209,7 +210,7 @@ blockquote {
         grid-template-areas: "history-label" "history-events";
     }
     .history-events {
-        display: block;
+        grid-template-columns: 1fr;
     }
     .history-label {
         text-align: left;
