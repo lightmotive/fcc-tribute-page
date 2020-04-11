@@ -19,7 +19,7 @@
 * [Use CloudFront to serve a static website hosted on Amazon S3](https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/)
 
 ## Publish requirements
-* Add a secure-config.js file (ignored) that exports the following secrets:
+* Add a *secure-config.js* file (ignored) that exports the following secrets:
 ```javascript
 module.exports = {
   AWS_ACCESS_KEY_ID: 'yourKeyHere',
