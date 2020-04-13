@@ -115,4 +115,4 @@ dist
 .pnp.*
 
 # Secure/local
-secure-config.js
+config-secure.js
