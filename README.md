@@ -13,4 +13,4 @@
 * Media queries for enhanced responsiveness
 * [Readmore.js library](https://github.com/jedfoster/Readmore.js) for expand/collapse functionality.
 
-**See also:** [Common config and documentation](https://github.com/alight1/template-webpack-with-s3-hosting#common)
+**See also:** [Common concepts, config, and documentation](https://github.com/alight1/template-webpack-with-s3-hosting#common)
