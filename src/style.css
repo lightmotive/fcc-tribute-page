@@ -39,180 +39,186 @@ http://paletton.com
 */
 
 :root {
-    --content-relative-width: 90vw;
-    --content-max-width: 850px;
-    --main-background-color: hsl(36, 83%, 97%);
-    --main-text-color: hsl(360, 100%, 10%);
-    --highlight-background-color: #B7A890;
-    --highlight-text-color: white;
-    --history-event-background-color: #D8CFBF;
-    --history-event-text-color: black;
-    --event-card-min-width: 200px;
+  --content-relative-width: 90vw;
+  --content-max-width: 850px;
+  --main-background-color: hsl(36, 83%, 97%);
+  --main-text-color: hsl(360, 100%, 10%);
+  --highlight-background-color: #b7a890;
+  --highlight-text-color: white;
+  --history-event-background-color: #d8cfbf;
+  --history-event-text-color: black;
+  --event-card-min-width: 200px;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-    font-family: Robotto, sans-serif;
-    color: var(--main-text-color);
-    font-size: 20px;
-    text-align: center;
+  font-family: Robotto, sans-serif;
+  color: var(--main-text-color);
+  font-size: 20px;
+  text-align: center;
 }
 
 .main-content {
-    background-color: var(--main-background-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1vmin;
-    border-radius: 10px;
-    padding: 1vmin;
+  background-color: var(--main-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1vmin;
+  border-radius: 10px;
+  padding: 1vmin;
 }
 
-.main-content>* {
-    width: var(--content-relative-width);
-    max-width: var(--content-max-width);
+.main-content > * {
+  width: var(--content-relative-width);
+  max-width: var(--content-max-width);
 }
 
 .title {
-    font-size: 40px;
-    margin: 15px;
+  font-size: 40px;
+  margin: 15px;
 }
 
 .title-image-container {
-    background-color: white;
-    padding: 10px;
-    border: 5px outset lightgrey;
+  background-color: white;
+  padding: 10px;
+  border: 5px outset lightgrey;
 }
 
 .title-image {
-    max-width: var(--content-max-width);
+  max-width: var(--content-max-width);
 }
 
 figcaption {
-    margin-top: 10px;
-    font-size: 16px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
 .information {
-    text-align: left;
-    padding-bottom: 20px;
+  text-align: left;
+  padding-bottom: 20px;
 }
 
 .iframe-responsive-wrapper--16x9 {
-    position: relative;
-    max-height: calc(var(--content-max-width * .5625));
-    left: 50%;
-    transform: translateX(-50%);
+  position: relative;
+  max-height: calc(var(--content-max-width * 0.5625));
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 blockquote {
-    font-style: italic;
-    padding-left: 5px;
-    border-left: thick solid grey;
+  font-style: italic;
+  padding-left: 5px;
+  border-left: thick solid grey;
 }
 
 .history-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
 }
 
 .history-container-row {
-    display: grid;
-    grid-template-columns: 125px 1fr;
-    grid-gap: 10px;
-    grid-template-areas: "history-label history-events";
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  grid-gap: 10px;
+  grid-template-areas: "history-label history-events";
 }
 
 .history-label {
-    grid-area: "history-label";
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: var(--highlight-background-color);
-    color: var(--highlight-text-color);
-    font-weight: bold;
+  grid-area: "history-label";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--highlight-background-color);
+  color: var(--highlight-text-color);
+  font-weight: bold;
 }
 
 .history-events {
-    grid-area: "history-events";
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--event-card-min-width), .5fr));
-    gap: 5px 5px;
-    text-align: left;
-    border-radius: 5px;
+  grid-area: "history-events";
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--event-card-min-width), 0.5fr)
+  );
+  gap: 5px 5px;
+  text-align: left;
+  border-radius: 5px;
 }
 
-.history-events>div {
-    background-color: var(--history-event-background-color);
-    color: var(--history-event-text-color);
-    padding: 5px;
-    box-shadow: 2px 2px 1px var(--main-text-color);
+.history-events > div {
+  background-color: var(--history-event-background-color);
+  color: var(--history-event-text-color);
+  padding: 5px;
+  box-shadow: 2px 2px 1px var(--main-text-color);
 }
 
 .event-header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .event-header time {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .event-icon {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .work-title {
-    font-weight: bold;
-    align-self: center;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  font-weight: bold;
+  align-self: center;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .work-title a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .work-takeaway {
-    text-align: center;
-    font-style: italic;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  text-align: center;
+  font-style: italic;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .event-description {
-    max-height: 200px;
-    overflow-y: hidden;
+  max-height: 200px;
+  overflow-y: hidden;
 }
 
-.read-more-open, .read-more-close {
-    height: 24px;
-    width: 24px;
+.read-more-open,
+.read-more-close {
+  height: 24px;
+  width: 24px;
 }
 
 @media (max-width: 600px) {
-    .history-container-row {
-        grid-template-columns: 1fr;
-        grid-template-areas: "history-label" "history-events";
-    }
-    .history-events {
-        grid-template-columns: 1fr;
-    }
-    .history-label {
-        text-align: left;
-    }
+  .history-container-row {
+    grid-template-columns: 1fr;
+    grid-template-areas: "history-label" "history-events";
+  }
+  .history-events {
+    grid-template-columns: 1fr;
+  }
+  .history-label {
+    text-align: left;
+  }
 }
