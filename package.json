@@ -1,6 +1,6 @@
 {
   "name": "fcc-tribute-page",
-  "version": "1.1.0",
+  "version": "1.4.0",
   "description": "See readme",
   "private": true,
   "dependencies": {
@@ -30,7 +30,10 @@
     "start:watch": "npm run watch",
     "start:server": "webpack-dev-server --open --config webpack.dev.js",
     "start": "run-p start:*",
-    "publish": "webpack --config webpack.prod.js"
+    "publish-no-version": "webpack --config webpack.prod.js",
+    "publish-patch": "npm version patch -m \"Patch release: %s\" && npm run publish-no-version",
+    "publish-minor": "npm version minor -m \"Minor release: %s\" && npm run publish-no-version",
+    "publish-major": "npm version major -m \"Major release: %s\" && npm run publish-no-version"
   },
   "repository": {
     "type": "git",
