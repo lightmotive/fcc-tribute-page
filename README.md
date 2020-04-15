@@ -1,10 +1,12 @@
 # Tribute Page - freeCodeCamp Project
 
+A simple responsive tribute page that highlights a favorite modern composer: Jóhann Jóhannsson.
+
 **[Online demo](https://lightmotive.pro/fcc-tribute-page/)**
 
-[Project instructions: Build a Tribute Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
+[Project instructions](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
 
-## A responsive web page created with the following concepts
+## Demonstrated concepts
 
 - CSS variables and functions
 - display: flex and grid
