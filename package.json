@@ -31,9 +31,9 @@
     "start:server": "webpack-dev-server --open --config webpack.dev.js",
     "start": "run-p start:*",
     "publish-no-version": "webpack --config webpack.prod.js",
-    "publish-patch": "npm version patch -m \"Patch release: %s\" && npm run publish-no-version",
-    "publish-minor": "npm version minor -m \"Minor release: %s\" && npm run publish-no-version",
-    "publish-major": "npm version major -m \"Major release: %s\" && npm run publish-no-version"
+    "publish-patch": "npm version patch -m \"Patch release: %s\" && git push origin master && npm run publish-no-version",
+    "publish-minor": "npm version minor -m \"Minor release: %s\" && git push origin master && npm run publish-no-version",
+    "publish-major": "npm version major -m \"Major release: %s\" && git push origin master && npm run publish-no-version"
   },
   "repository": {
     "type": "git",
