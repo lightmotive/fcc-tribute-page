@@ -21,3 +21,9 @@ $(".event-description").readmore({
     '" class="read-more-close" alt="Close" /></a>',
   heightMargin: 50,
 });
+
+//Append freeCodeCamp test utility (does not work when added directly to HTML)
+var fccScript = document.createElement("script");
+fccScript.src =
+  "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js";
+document.head.appendChild(fccScript);
