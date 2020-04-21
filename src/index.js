@@ -8,19 +8,19 @@ import bodyContent from "../src/body-content.html";
 
 document.getElementById("body").innerHTML += bodyContent;
 
-window.onload = () => {};
-
-$(".event-description").readmore({
-  moreLink:
-    '<a href="#"><img src="' +
-    assetChevronDown +
-    '" class="read-more-open" alt="Read more" /></a>',
-  lessLink:
-    '<a href="#"><img src="' +
-    assetChevronUp +
-    '" class="read-more-close" alt="Close" /></a>',
-  heightMargin: 50,
-});
+window.onload = () => {
+  $(".event-description").readmore({
+    moreLink:
+      '<a href="#"><img src="' +
+      assetChevronDown +
+      '" class="read-more-open" alt="Read more" /></a>',
+    lessLink:
+      '<a href="#"><img src="' +
+      assetChevronUp +
+      '" class="read-more-close" alt="Close" /></a>',
+    heightMargin: 50,
+  });
+};
 
 //Append freeCodeCamp test utility (does not work when added directly to HTML)
 localStorage.setItem("project_selector", "tribute-page");
