@@ -41,13 +41,14 @@ http://paletton.com
 :root {
   --content-relative-width: 90vw;
   --content-max-width: 850px;
-  --main-background-color: hsl(36, 83%, 97%);
-  --main-text-color: hsl(360, 100%, 10%);
-  --highlight-background-color: #b7a890;
-  --highlight-text-color: white;
-  --history-event-background-color: #d8cfbf;
+  --main-background-color: hsl(240, 20%, 98%);
+  --main-text-color: black;
+  --highlight-background-color: #babad6;
+  --highlight-text-color: black;
+  --history-event-background-color: #e2e2ed;
   --history-event-text-color: black;
   --event-card-min-width: 200px;
+  --title-image-container-border: #7aa0a8;
 }
 
 html {
@@ -91,7 +92,7 @@ body {
 .title-image-container {
   background-color: white;
   padding: 10px;
-  border: 5px outset lightgrey;
+  border: 5px outset var(--title-image-container-border);
 }
 
 .title-image {
@@ -200,7 +201,7 @@ blockquote {
 }
 
 .event-description {
-  max-height: 200px;
+  max-height: 250px;
   overflow-y: hidden;
 }
 
