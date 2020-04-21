@@ -11,7 +11,7 @@ A simple responsive tribute page that highlights a favorite modern composer: Jó
 - CSS variables and functions
 - display: flex and grid
 - Responsive images and iframes for embedded video
-- Accessibility
+- Accessibility, including semantic markup with [currently advisable WAI-ARIA roles and labeling](https://www.w3.org/WAI/tutorials/page-structure/regions/#accessupport)
 - Media queries for enhanced responsiveness
 - [Readmore.js library](https://github.com/jedfoster/Readmore.js) for expand/collapse functionality.
 
