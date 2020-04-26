@@ -8,6 +8,8 @@ A simple responsive tribute page that highlights a favorite modern composer: Jó
 
 ## Demonstrated concepts
 
+**Main languages:** HTML, CSS
+
 - CSS variables and functions
 - display: flex and grid
 - Responsive images and iframes for embedded video
